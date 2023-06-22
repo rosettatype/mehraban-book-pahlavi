@@ -14,3 +14,4 @@ Mehraban Book Pahlavi is an outcome of the Missing Scripts research programme at
 
 The complete [Mehraban collection](https://rosettatype.com/fonts/#?collection=Mehraban) (available from Rosetta) currently supports Arabic, Avestan, and Book Pahlavi as individual families.
 
+This project is far from complete and should be considered a beta (if not alpha). We will appreciate any feedback. Please use [Issues on GitHub](https://github.com/rosettatype/mehraban-book-pahlavi/issues).
