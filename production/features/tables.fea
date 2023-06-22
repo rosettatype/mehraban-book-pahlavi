@@ -33,6 +33,6 @@ table name {
 	nameid 9 "Amir Mahdi Moslehi";
 	nameid 11 "http://rosettatype.com";
 	nameid 12 "http://rosettatype.com";
-	nameid 13 "This Font Software is licensed under the CC BY-ND 4.0. This license is available with a FAQ at: https://creativecommons.org/licenses/by-nd/4.0/";
+	nameid 13 "This font is licensed under the GPL-3.0 license.";
 	nameid 14 "https://creativecommons.org/licenses/by-nd/4.0/";
 } name;

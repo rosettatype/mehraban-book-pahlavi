@@ -361,7 +361,7 @@ value = RST;
 },
 {
 name = license;
-value = "This Font Software is licensed under the CC BY-ND 4.0. This license is available with a FAQ at: https://creativecommons.org/licenses/by-nd/4.0/";
+value = "This font is licensed under the GPL-3.0 license.";
 },
 {
 name = licenseURL;
