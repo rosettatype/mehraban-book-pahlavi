@@ -1,0 +1,38 @@
+#----------------------------------------------------------------------------
+# Tables
+
+table OS/2 {
+	FSType				8;
+	UnicodeRange
+						31		# General Punctuation
+						;
+	CodePageRange
+						;
+	winAscent			1035; # Absolute tallest glyphs
+	winDescent			650; # Absolute lowest glyphs
+	TypoAscender		818; # Most essential asender parts included
+	TypoDescender		-650; # Absolute lowest glyphs
+	TypoLineGap			200; # 15% of typo asc+desc
+	XHeight		        416;
+	CapHeight			660;
+	Vendor				" RST";
+	Panose				2 0 5 3 9 4 0 0 0 4;
+	WeightClass         400;
+	WidthClass			5;
+} OS/2;
+
+table hhea {
+	Ascender 818; # Most essential asender parts included
+	Descender -650; # Absolute lowest glyphs
+	LineGap 200; # 15% of typo asc+desc
+} hhea;
+
+table name {
+	nameid 0 "Copyright (c) 2023 Amir Mahdi Moslehi. Published by Rosetta Type Foundry.";
+	nameid 8 "Rosetta Type Foundry";
+	nameid 9 "Amir Mahdi Moslehi";
+	nameid 11 "http://rosettatype.com";
+	nameid 12 "http://rosettatype.com";
+	nameid 13 "This Font Software is licensed under the CC BY-ND 4.0. This license is available with a FAQ at: https://creativecommons.org/licenses/by-nd/4.0/";
+	nameid 14 "https://creativecommons.org/licenses/by-nd/4.0/";
+} name;

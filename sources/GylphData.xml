@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE glyphData [
+<!ELEMENT glyphData (glyph)+>
+<!ATTLIST glyphData
+	format			CDATA		#IMPLIED>
+<!ELEMENT glyph EMPTY>
+<!ATTLIST glyph
+	unicode			CDATA		#IMPLIED
+	unicodeLegacy	CDATA		#IMPLIED
+	name			CDATA		#REQUIRED
+	sortName		CDATA		#IMPLIED
+	sortNameKeep	CDATA		#IMPLIED
+	category		CDATA		#REQUIRED
+	subCategory		CDATA		#IMPLIED
+	case			CDATA		#IMPLIED
+	direction		CDATA		#IMPLIED
+	script			CDATA		#IMPLIED
+	description		CDATA		#IMPLIED
+	production		CDATA		#IMPLIED
+	altNames		CDATA		#IMPLIED
+	decompose		CDATA		#IMPLIED
+	anchors			CDATA		#IMPLIED
+	marks			CDATA		#IMPLIED>
+]>
+<glyphData version="2">
+
+  <!-- Book Pahlavi with Arabic code points -->
+  <!-- only alef need to be mapped to 0626 to keep its joining behaviour which is different from Arabic alef -->
+
+  <glyph name="alef-phlv" category="Letter" sortName="phlv0" script="arabic" unicode="0626" production="u0626" direction="RTL" description="BOOK PAHLAVI LETTER ALEF" />
+  <glyph name="beh-phlv" category="Letter" sortName="phlv1" script="arabic" unicode="0628" production="u0628" direction="RTL" description="BOOK PAHLAVI LETTER BEH" />
+  <glyph name="ain-phlv" category="Letter" sortName="phlv2" script="arabic" unicode="0639" production="u0639" direction="RTL" description="BOOK PAHLAVI LETTER AIN" />
+  <glyph name="heh-phlv" category="Letter" sortName="phlv3" script="arabic" unicode="0680" production="u0680" direction="RTL" description="BOOK PAHLAVI LETTER HEH" />
+  <glyph name="reh-phlv" category="Letter" sortName="phlv4" script="arabic" unicode="0631" production="u0631" direction="RTL" description="BOOK PAHLAVI LETTER REH" />
+  <glyph name="dad-phlv" category="Letter" sortName="phlv5" script="arabic" unicode="0636" production="u0636" direction="RTL" description="BOOK PAHLAVI LETTER DAD" />
+  <glyph name="keheh-phlv" category="Letter" sortName="phlv6" script="arabic" unicode="06A9" production="u06A9" direction="RTL" description="BOOK PAHLAVI LETTER KEHEH" />
+  <glyph name="lam-phlv" category="Letter" sortName="phlv7" script="arabic" unicode="0644" production="u0644" direction="RTL" description="BOOK PAHLAVI LETTER LAM" />
+  <glyph name="meem-phlv" category="Letter" sortName="phlv8" script="arabic" unicode="0645" production="u0645" direction="RTL" description="BOOK PAHLAVI LETTER MEEM" />
+  <glyph name="theh-phlv" category="Letter" sortName="phlv9" script="arabic" unicode="062B" production="u062B" direction="RTL" description="BOOK PAHLAVI LETTER THEH" />
+  <glyph name="peh-phlv" category="Letter" sortName="phlv10" script="arabic" unicode="067E" production="u067E" direction="RTL" description="BOOK PAHLAVI LETTER PEH" />
+  <glyph name="tcheh-phlv" category="Letter" sortName="phlv11" script="arabic" unicode="0686" production="u0686" direction="RTL" description="BOOK PAHLAVI LETTER TCHEH" />
+  <glyph name="sad-phlv" category="Letter" sortName="phlv12" script="arabic" unicode="0635" production="u0635" direction="RTL" description="BOOK PAHLAVI LETTER SAD" />
+  <glyph name="teh-phlv" category="Letter" sortName="phlv13" script="arabic" unicode="062A" production="u062A" direction="RTL" description="BOOK PAHLAVI LETTER TEH" />
+  <glyph name="jeem-phlv" category="Letter" sortName="phlv14" script="arabic" unicode="062C" production="u062C" direction="RTL" description="BOOK PAHLAVI LETTER JEEM" />
+  <glyph name="kaf-phlv" category="Letter" sortName="phlv15" script="arabic" unicode="0643" production="u0643" direction="RTL" description="BOOK PAHLAVI LETTER KAF" />
+  <glyph name="seen-phlv" category="Letter" sortName="phlv16" script="arabic" unicode="0633" production="u0633" direction="RTL" description="BOOK PAHLAVI LETTER SEEN" />
+  <glyph name="sheen-phlv" category="Letter" sortName="phlv17" script="arabic" unicode="0634" production="u0634" direction="RTL" description="BOOK PAHLAVI LETTER SHEEN" />
+	<glyph name="huzwaresh-x1-phlv" category="Letter" sortName="phlv18" script="arabic" unicode="F0000" production="uF0000" direction="RTL" description="BOOK PAHLAVI LETTER HUZWARESH X1" />
+	<glyph name="huzwaresh-x2-phlv" category="Letter" sortName="phlv19" script="arabic" direction="RTL" description="BOOK PAHLAVI LETTER HUZWARESH X2" />
+	<glyph name="huzwaresh-x3-phlv" category="Letter" sortName="phlv20" script="arabic" direction="RTL" description="BOOK PAHLAVI LETTER HUZWARESH X3" />
+	<glyph name="huzwaresh-y-phlv" category="Letter" sortName="phlv21" script="arabic" direction="RTL" description="BOOK PAHLAVI LETTER HUZWARESH Y" />
+	<glyph name="ahreman-phlv" category="Symbol" sortName="phlv22" script="arabic" unicode="F0001" production="uF0001" direction="RTL" description="BOOK PAHLAVI SIGN AHREMAN" />
+	<glyph name="ahremanig-phlv" category="Symbol" sortName="phlv23" script="arabic" direction="RTL" description="BOOK PAHLAVI SIGN AHREMANIG" />
+	<glyph name="ahremaniz-phlv" category="Symbol" sortName="phlv24" script="arabic" direction="RTL" description="BOOK PAHLAVI SIGN AHREMAN-IZ" />
+</glyphData>

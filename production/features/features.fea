@@ -1,0 +1,63 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem arab dflt;
+# languagesystem phlv dflt;  # does not exist yet  # not used for distinction
+
+# do not include this here
+# so we can refer to this file from Glyphs source
+# include(tables.fea);
+
+#------------------------------------------------------------------------------
+# FEATURES
+
+feature aalt {
+	feature init;
+	feature medi;
+	feature fina;
+
+	feature rlig;
+	feature rclt;
+	feature liga;
+
+	feature calt;
+
+	feature ss02;
+	feature ss03;
+	feature ss04;
+	feature ss05;
+	feature ss06;
+	feature ss07;
+	feature ss08;
+	feature ss09;
+
+	feature cv01;
+	feature cv02;
+
+	feature ornm;
+} aalt;
+
+
+#------------------------------------------------------------------------------
+# Positional forms
+
+include(positional.fea);
+
+
+#------------------------------------------------------------------------------
+# Ligatures and contextual alternates for ligatures
+
+
+
+include(rlig.fea);
+include(rclt.fea);
+include(calt.fea);
+include(liga.fea);
+
+#------------------------------------------------------------------------------
+# Stylistic sets and alternates
+
+include(stylistic.fea);
+
+feature ornm {
+    sub asterisk from [asterisk ornament];    
+} ornm;

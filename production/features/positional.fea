@@ -1,0 +1,59 @@
+feature init {
+    sub alef-ar by alef-ar.init;
+    sub ain-ar by ain-ar.init;
+    sub dad-ar by dad-ar.init;
+    sub keheh-ar by keheh-ar.init;  # fake init form (corresponds to base form)
+    sub lam-ar by lam-ar.init;
+    sub meem-ar by meem-ar.init;
+    sub theh-ar by theh-ar.init;
+    sub sad-ar by sad-ar.init;
+    sub jeem-ar by jeem-ar.init;
+    sub seen-ar by seen-ar.init;
+    sub sheen-ar by sheen-ar.init;
+    sub peh-ar by peh-ar.init;  # fake init form (corresponds to base form)
+    sub tcheh-ar by tcheh-ar.init;  # fake init form (corresponds to base form)
+    sub teh-ar by teh-ar.init;  # fake init form (corresponds to base form)
+    sub beh-ar by beh-ar.init;  # fake init form (corresponds to base form)
+    sub kaf-ar by kaf-ar.init;  # fake init form (corresponds to base form)
+} init;
+
+feature medi {
+    sub alef-ar by alef-ar.medi;
+    sub ain-ar by ain-ar.medi;
+    sub dad-ar by dad-ar.medi;
+    sub keheh-ar by keheh-ar.medi;  # fake medi form (corresponds to fina form)
+    sub lam-ar by lam-ar.medi;
+    sub meem-ar by meem-ar.medi;
+    sub theh-ar by theh-ar.medi;
+    sub sad-ar by sad-ar.medi;
+    sub jeem-ar by jeem-ar.medi;
+    sub seen-ar by seen-ar.medi;
+    sub sheen-ar by sheen-ar.medi;
+    sub peh-ar by peh-ar.medi;  # fake medi form (corresponds to fina form)
+    sub tcheh-ar by tcheh-ar.medi;  # fake medi form (corresponds to fina form)
+    sub teh-ar by teh-ar.medi;  # fake medi form (corresponds to fina form)
+    sub beh-ar by beh-ar.medi;  # fake medi form (corresponds to fina form)
+    sub kaf-ar by kaf-ar.medi;  # fake medi form (corresponds to fina form)
+} medi;
+
+feature fina {
+    sub alef-ar by alef-ar.fina;
+    sub beh-ar by beh-ar.fina;
+    sub ain-ar by ain-ar.fina;
+    sub reh-ar by reh-ar.fina;
+    sub dad-ar by dad-ar.fina;
+    sub keheh-ar by keheh-ar.fina;
+    sub lam-ar by lam-ar.fina;
+    sub meem-ar by meem-ar.fina;
+    sub theh-ar by theh-ar.fina;
+    sub peh-ar by peh-ar.fina;
+    sub tcheh-ar by tcheh-ar.fina;
+    sub sad-ar by sad-ar.fina;
+    sub teh-ar by teh-ar.fina;
+    sub jeem-ar by jeem-ar.fina;
+    sub kaf-ar by kaf-ar.fina;
+    sub seen-ar by seen-ar.fina;
+    sub sheen-ar by sheen-ar.fina;
+
+    sub huzwaresh-x2-phlv by huzwaresh-x2-phlv.fina;
+} fina;

@@ -1,0 +1,11 @@
+
+feature liga {
+    lookup LIGA_LATN {
+        sub f b by f_b;
+        sub f h by f_h;
+        sub f i by f_i;
+        sub f j by f_j;
+        sub f k by f_k;
+        sub f l by f_l;
+    } LIGA_LATN;
+} liga;

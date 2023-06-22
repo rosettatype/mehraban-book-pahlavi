@@ -1,0 +1,68 @@
+# mrhandy: 1.2.1
+
+- vars:
+    - &remove_design_anchors [
+        "#entry",
+        "#exit",
+        "entry",
+        "exit",
+        "gaf",
+        "dotbelow",
+        "dotabove",
+        "twodotsbelow",
+        "twodotsabove",
+        "threedotsbelow",
+        "threedotsabove",
+        "hamzabelow",
+        "hamzaabove",
+      ]
+
+# ----------------------------------------
+# extract ufos from glyphs sources
+- name: sources
+  source: sources/MehrabanBookPahlavi-Regular.glyphs
+  tasks:
+    - .glyphs.make_ufos
+
+# ----------------------------------------
+# compile static fonts:
+
+- name: fonts
+  source: production/ufo/instances
+  family: Mehraban Book Pahlavi
+  tasks:
+    - .ufo.cleanup:
+      remove_anchors: *remove_design_anchors
+    - .ufo.sync_names:
+        strict: false
+    - .ufo.add_features:
+        feature_file: ["production/features/tables.fea", "production/features/features.fea"]
+        #generate_kern: false
+
+    - .ufo.make_otf
+    - .ufo.make_ttf
+    - .post.add_legacy_kern
+    - .post.add_dsig
+
+# ----------------------------------------
+# compile webfonts
+- name: web
+  source: [fonts/MehrabanBookPahlavi]
+  family: [Mehraban Book Pahlavi Web]
+  tasks:
+    - .post.make_webfonts
+
+# ----------------------------------------
+# trial fonts (not needed as MBP is free)
+# - name: trials
+#   source: [fonts/MehrabanBookPahlavi]
+#   family: [Mehraban Book Pahlavi TRIAL]
+#   tasks:
+#     - .post.make_trialfonts
+
+# ----------------------------------------
+# Test fonts
+- name: qa
+  source: fonts/MehrabanBookPahlavi
+  tasks:
+    - .test.check_fonts

@@ -1,0 +1,113 @@
+
+feature ss02 {
+    featureNames {
+        name "Book Pahlavi alternate forms for Theh";
+    };
+
+    sub theh-ar by theh-ar.ss02;
+    sub theh-ar.fina by theh-ar.fina.ss02;
+    sub theh-ar.medi by theh-ar.medi.ss02;
+    sub theh-ar.init by theh-ar.init.ss02;
+    sub theh-ar.medi.LL by theh-ar.medi.LL.ss02;
+    sub theh-ar.medi.LL.LR by theh-ar.medi.LL.LR.ss02;
+    sub theh-ar.init.LL by theh-ar.init.LL.ss02;
+
+} ss02;
+
+feature ss03 {
+    featureNames {
+        name "Book Pahlavi alternate forms for Seen";
+    };
+
+    sub seen-ar by seen-ar.ss03;
+    sub seen-ar.fina by seen-ar.fina.ss03;
+    sub seen-ar.medi by seen-ar.medi.ss03;
+    sub seen-ar.init by seen-ar.init.ss03;
+    sub seen-ar.fina.LR by seen-ar.fina.LR.ss03;
+    sub seen-ar.medi.LR by seen-ar.medi.LR.ss03;
+    sub seen_peh-ar by seen_peh-ar.ss03;
+    sub seen_peh-ar.fina by seen_peh-ar.fina.ss03;
+    sub seen_peh-ar.fina.LR by seen_peh-ar.fina.LR.ss03;
+
+} ss03;
+
+feature ss04 {
+    featureNames {
+        name "Book Pahlavi first alternate forms for Lam";
+    };
+
+    sub lam-ar by lam-ar.ss04;
+    sub lam-ar.fina by lam-ar.fina.ss04;
+    sub [lam-ar.medi lam-ar.medi.LL.LR] by lam-ar.medi.ss04;
+    sub [lam-ar.init lam-ar.init.BL] by lam-ar.init.ss04;
+    sub lam_meem-ar by lam_meem-ar.ss04;
+    sub lam_meem-ar.init by lam_meem-ar.init.ss04;
+
+} ss04;
+
+feature ss05 {
+    featureNames {
+        name "Book Pahlavi second alternate forms for Lam";
+    };
+
+    sub lam-ar by lam-ar.ss05;
+    sub [lam-ar.fina lam-ar.fina.ss04] by lam-ar.fina.ss05;
+    sub [lam-ar.medi lam-ar.medi.LL.LR lam-ar.medi.ss04] by lam-ar.medi.ss05;
+    sub [lam-ar.init lam-ar.init.BL lam-ar.init.ss04] by lam-ar.init.ss05;
+    sub [lam_meem-ar lam_meem-ar.ss04] by lam_meem-ar.ss05;
+    sub [lam_meem-ar.init lam_meem-ar.init.ss04] by lam_meem-ar.init.ss05;
+
+
+} ss05;
+
+feature ss06 {
+    featureNames {
+        name "Book Pahlavi third alternate forms for Lam";
+    };
+
+    sub lam-ar by lam-ar.ss06;
+    sub [lam-ar.fina lam-ar.fina.ss04 lam-ar.fina.ss05] by lam-ar.fina.ss06;
+    sub [lam-ar.medi lam-ar.medi.ss04 lam-ar.medi.ss05] by lam-ar.medi.ss06;
+    sub [lam-ar.init lam-ar.init.BL lam-ar.init.ss04 lam-ar.init.ss05] by lam-ar.init.ss06;
+    sub lam-ar.medi.LL.LR by lam-ar.medi.LL.LR.ss06;
+    sub [lam_meem-ar lam_meem-ar.ss04 lam_meem-ar.ss05] by lam_meem-ar.ss06;
+    sub [lam_meem-ar.init lam_meem-ar.init.ss04 lam_meem-ar.init.ss05] by lam_meem-ar.init.ss06;
+
+} ss06;
+
+feature ss07 {
+    featureNames {
+        name "Book Pahlavi alternate form of period and space";
+    };
+
+    sub period by period.ss07;
+    sub space by space.ss07;
+
+} ss07;
+
+feature ss08 {
+    featureNames {
+        name "Book Pahlavi alternate form of period";
+    };
+
+    sub period by period.ss08;
+
+} ss08;
+
+feature ss09 {
+    featureNames {
+        name "Book Pahlavi alternate form of huzwaresh x1";
+    };
+
+    sub huzwaresh-x1-phlv by huzwaresh-x1-phlv.ss09;
+
+} ss09;
+
+
+feature cv01 {
+    sub ahreman-phlv from [ahreman-phlv ahremanig-phlv ahremaniz-phlv];
+} cv01;
+
+feature cv02 {
+    sub huzwaresh-x1-phlv from [huzwaresh-x1-phlv huzwaresh-x2-phlv huzwaresh-x2-phlv.fina huzwaresh-x3-phlv huzwaresh-y-phlv huzwaresh-x1-phlv.ss09];
+} cv02;

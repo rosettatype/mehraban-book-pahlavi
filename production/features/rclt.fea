@@ -1,0 +1,435 @@
+@low-connection_right = [
+  # all glyphs with low connection on the right side
+
+  # alef, dad_peh, teh-ar.fina are naturally low on the right side
+  alef-ar.fina alef-ar.medi alef-ar.medi.LL dad_peh-ar.fina teh-ar.fina 
+
+  # fake medi form (corresponds to fina forms)
+  teh-ar.medi
+
+  # optionally low on the right side (everything with .LR suffix)
+
+  ain-ar.fina.LR dad-ar.medi.LL.LR keheh-ar.fina.LR lam-ar.medi.LL.LR theh-ar.medi.LL.LR peh-ar.fina.LR sad-ar.fina.LR sad-ar.medi.LR sad-ar.medi.LL.LR seen-ar.fina.LR seen-ar.medi.LR sheen-ar.fina.LR sheen-ar.medi.LR alef_meem-ar.fina.LR alef_meem-ar.medi.LR ain_meem-ar.fina.LR ain_meem-ar.medi.LR jeem-ar.medi.LR jeem-ar.medi.LL.LR seen_peh-ar.fina.LR sheen-ar.medi.LL.LR 
+];
+
+@low-connection_left = [
+  # all glyphs with low connection on the left side
+
+  # alef, ain, meem, and keheh are naturally low on the left side
+  alef-ar.init ain-ar.init meem-ar.init keheh-ar.medi keheh-ar.init lam-ar.init
+
+  # optionally low on the left side (everything with .LL suffix)
+
+  alef-ar.medi.LL alef-ar.medi.LL.BR dad-ar.medi.LL.LR dad-ar.init.LL lam-ar.medi.LL.LR meem-ar.medi.LL theh-ar.medi.LL theh-ar.medi.LL.LR theh-ar.init.LL sad-ar.medi.LL sad-ar.medi.LL.LR sad-ar.init.LL sheen-ar.medi.LL sheen-ar.init.LL jeem-ar.medi.LL.LR jeem-ar.init.LL sheen-ar.medi.LL.LR 
+];
+
+@low-connection_both = [
+  # all glyphs with low connections on the both sides
+
+  alef-ar.medi.LL
+
+  # optionally low on the both sides (everything with .LL.LR suffix)
+  dad-ar.medi.LL.LR lam-ar.medi.LL.LR theh-ar.medi.LL.LR sad-ar.medi.LL.LR jeem-ar.medi.LL.LR sheen-ar.medi.LL.LR 
+];
+
+@baseline-connection_right = [
+  # all glyphs with baseline connection on the right. In case this is not their default state, they have suffix .baseline-right
+
+  # initial forms
+  # not relevant
+
+  # medial forms
+  ain-ar.medi dad-ar.medi keheh-ar.medi lam-ar.medi meem-ar.medi meem-ar.medi.LL theh-ar.medi sad-ar.medi jeem-ar.medi seen-ar.medi sheen-ar.medi alef_meem-ar.medi ain_meem-ar.medi jeem_theh-ar.medi alef-ar.medi.BR alef-ar.medi.LL.BR theh-ar.medi.LL sad-ar.medi.LL sheen-ar.medi.LL
+
+  # fake medi forms (correspond to fina forms)
+  beh-ar.medi peh-ar.medi tcheh-ar.medi kaf-ar.medi
+
+  # final forms
+  beh-ar.fina ain-ar.fina reh-ar.fina dad-ar.fina keheh-ar.fina lam-ar.fina meem-ar.fina theh-ar.fina peh-ar.fina tcheh-ar.fina sad-ar.fina teh-ar.fina.BR jeem-ar.fina kaf-ar.fina seen-ar.fina sheen-ar.fina alef_meem-ar.fina ain_meem-ar.fina meem_peh-ar.fina seen_peh-ar.fina alef-ar.fina.BR
+];
+
+@baseline-connection_left = [
+  # all glyphs with baseline connection on the left. In case this is not their default state, they have suffix .baseline
+
+  # initial forms
+  ain-ar.init.BL dad-ar.init lam-ar.init.BL meem-ar.init.BL theh-ar.init sad-ar.init jeem-ar.init seen-ar.init sheen-ar.init alef_meem-ar.init ain_meem-ar.init dad_meem-ar.init lam_meem-ar.init meem_meem-ar.init jeem_theh-ar.init alef-ar.init.BL
+
+  # medial forms
+  alef-ar.medi ain-ar.medi dad-ar.medi lam-ar.medi meem-ar.medi theh-ar.medi sad-ar.medi jeem-ar.medi seen-ar.medi sheen-ar.medi alef_meem-ar.medi ain_meem-ar.medi jeem_theh-ar.medi alef-ar.medi.BR sad-ar.medi.LR seen-ar.medi.LR sheen-ar.medi.LR alef_meem-ar.medi.LR ain_meem-ar.medi.LR 
+
+  # final forms
+  # not relevant
+];
+
+@low-connection_right_from = [
+  ain-ar.fina
+  keheh-ar.fina
+  keheh-ar.medi  # looks like keheh-ar.fina
+  peh-ar.fina
+  peh-ar.medi  # looks like peh-ar.fina
+  sad-ar.fina
+  sad-ar.medi
+  seen-ar.fina
+  seen-ar.medi
+  sheen-ar.fina
+  sheen-ar.medi
+  alef_meem-ar.fina
+  alef_meem-ar.medi
+  ain_meem-ar.fina
+  ain_meem-ar.medi
+  seen_peh-ar.fina
+];
+
+@low-connection_right_to = [
+  ain-ar.fina.LR
+  keheh-ar.fina.LR
+  keheh-ar.fina.LR
+  peh-ar.fina.LR
+  peh-ar.fina.LR
+  sad-ar.fina.LR
+  sad-ar.medi.LR
+  seen-ar.fina.LR
+  seen-ar.medi.LR
+  sheen-ar.fina.LR
+  sheen-ar.medi.LR
+  alef_meem-ar.fina.LR
+  alef_meem-ar.medi.LR
+  ain_meem-ar.fina.LR
+  ain_meem-ar.medi.LR
+  seen_peh-ar.fina.LR
+];
+
+@low-connection_left_from = [
+  alef-ar.medi
+  dad-ar.init
+  lam-ar.init.BL
+  theh-ar.medi
+  theh-ar.init
+  sad-ar.init
+  sad-ar.medi
+  sheen-ar.medi
+  sheen-ar.init
+  jeem-ar.init
+  meem-ar.medi
+];
+
+@low-connection_left_to = [
+  alef-ar.medi.LL
+  dad-ar.init.LL
+  lam-ar.init
+  theh-ar.medi.LL
+  theh-ar.init.LL
+  sad-ar.init.LL
+  sad-ar.medi.LL
+  sheen-ar.medi.LL
+  sheen-ar.init.LL
+  jeem-ar.init.LL
+  meem-ar.medi.LL
+];
+
+
+@low-connection_both_from = [
+  # these have to change on both sides
+  dad-ar.medi
+  lam-ar.medi
+
+  # these can change on one side only
+  jeem-ar.medi
+  jeem-ar.medi.LR
+  theh-ar.medi
+  theh-ar.medi.LL
+
+  # these can change on either side
+  alef-ar.medi
+  sad-ar.medi
+  sad-ar.medi.LL
+  sad-ar.medi.LR
+  sheen-ar.medi
+  sheen-ar.medi.LL
+  sheen-ar.medi.LR
+];
+
+@low-connection_both_to = [
+  dad-ar.medi.LL.LR
+  lam-ar.medi.LL.LR
+
+  jeem-ar.medi.LL.LR
+  jeem-ar.medi.LL.LR
+  theh-ar.medi.LL.LR
+  theh-ar.medi.LL.LR
+
+  alef-ar.medi.LL
+  sad-ar.medi.LL.LR
+  sad-ar.medi.LL.LR
+  sad-ar.medi.LL.LR
+  sheen-ar.medi.LL.LR
+  sheen-ar.medi.LL.LR
+  sheen-ar.medi.LL.LR
+];
+
+
+@fake_medi = [
+  keheh-ar.medi
+  peh-ar.medi
+  tcheh-ar.medi
+  teh-ar.medi
+  beh-ar.medi
+  kaf-ar.medi
+
+  # peh is fake medi
+  # so the ligatures need to make the change, too
+  dad_peh-ar
+  dad_peh-ar.fina
+  meem_peh-ar
+  meem_peh-ar.fina
+  seen_peh-ar
+  seen_peh-ar.fina
+  seen_peh-ar.fina.LR
+];
+
+@fake_init = [
+  keheh-ar.init
+  peh-ar.init
+  tcheh-ar.init
+  teh-ar.init
+  beh-ar.init
+  kaf-ar.init
+
+  # peh is fake init
+  # so the ligatures need to make the change, too
+  dad_peh-ar
+  dad_peh-ar.fina
+  meem_peh-ar
+  meem_peh-ar.fina
+  seen_peh-ar
+  seen_peh-ar.fina
+  seen_peh-ar.fina.LR
+];
+
+
+@base = [
+  alef-ar
+  beh-ar
+  ain-ar
+  reh-ar
+  dad-ar
+  keheh-ar
+  lam-ar
+  meem-ar
+  theh-ar
+  peh-ar
+  tcheh-ar
+  sad-ar
+  teh-ar
+  jeem-ar
+  kaf-ar
+  seen-ar
+  sheen-ar
+  heh-ar
+
+  alef_meem-ar
+  ain_meem-ar
+  #dad_meem-ar  # to maintain cardinality
+  dad_peh-ar
+  #lam_meem-ar
+  #meem_meem-ar
+  meem_peh-ar
+  jeem_theh-ar
+  seen_peh-ar
+];
+
+@fina = [
+  alef-ar.fina
+  beh-ar.fina
+  ain-ar.fina
+  reh-ar.fina
+  dad-ar.fina
+  keheh-ar.fina
+  lam-ar.fina
+  meem-ar.fina
+  theh-ar.fina
+  peh-ar.fina
+  tcheh-ar.fina
+  sad-ar.fina
+  teh-ar.fina
+  jeem-ar.fina
+  kaf-ar.fina
+  seen-ar.fina
+  sheen-ar.fina
+  heh-ar
+
+  alef_meem-ar.fina
+  ain_meem-ar.fina
+  dad_peh-ar.fina
+  meem_peh-ar.fina
+  jeem_theh-ar.fina
+  seen_peh-ar.fina
+  #alef_meem-ar.fina.LR  # to maintain cardinality
+  #ain_meem-ar.fina.LR
+  #seen_peh-ar.fina.LR
+];
+
+@medi = [
+  alef-ar.medi
+  beh-ar.medi
+  ain-ar.medi
+  #reh-ar.medi
+  dad-ar.medi
+  keheh-ar.medi
+  lam-ar.medi
+  meem-ar.medi
+  theh-ar.medi
+  peh-ar.medi
+  tcheh-ar.medi
+  sad-ar.medi
+  teh-ar.medi
+  jeem-ar.medi
+  kaf-ar.medi
+  seen-ar.medi
+  sheen-ar.medi
+
+  alef_meem-ar.medi
+  ain_meem-ar.medi
+  jeem_theh-ar.medi
+  #alef_meem-ar.medi.LR  # to maintain cardinality
+  #ain_meem-ar.medi.LR
+];
+
+@init = [
+  alef-ar.init
+  beh-ar.init
+  ain-ar.init
+  #reh-ar.init
+  dad-ar.init
+  keheh-ar.init
+  lam-ar.init
+  meem-ar.init
+  theh-ar.init
+  peh-ar.init
+  tcheh-ar.init
+  sad-ar.init
+  teh-ar.init
+  jeem-ar.init
+  kaf-ar.init
+  seen-ar.init
+  sheen-ar.init
+
+  alef_meem-ar.init
+  ain_meem-ar.init
+  #dad_meem-ar.init  # to maintain cardinality
+  #lam_meem-ar.init
+  #meem_meem-ar.init
+  jeem_theh-ar.init
+];
+
+feature rclt {
+  # 1. correct connecting behaviour
+  # disconnect BP glyphs
+  # that connect less than in Arabic
+
+  lookup RCLT_PHLV_JOINING {
+    lookupflag IgnoreMarks RightToLeft;
+
+    sub [@fake_init @base] @fina' by @base;
+    sub [@fake_init @base] @medi' by @init;
+    sub @fake_medi @fina' by @base;
+    sub @fake_medi @medi' by @init;
+  } RCLT_PHLV_JOINING;
+
+  # 2. correct connecting behaviour
+  # alef in BP is more-connecting than in Arabic
+
+  lookup RCLT_PHLV_JOINING_ALEF_1 {
+    lookupflag IgnoreMarks RightToLeft;
+
+    sub alef-ar.init @init' by @medi;
+    sub alef-ar.init @base' by @fina;
+    sub alef-ar.medi @init' by @medi;
+    sub alef-ar.medi @base' by @fina;
+    sub alef-ar.fina @init' by @medi;
+    sub alef-ar.fina @base' by @fina;
+    sub alef-ar @init' by @medi;
+    sub alef-ar @base' by @fina;
+  } RCLT_PHLV_JOINING_ALEF_1;
+
+  lookup RCLT_PHLV_JOINING_ALEF_2 {
+    lookupflag IgnoreMarks RightToLeft;
+
+    sub alef-ar.fina' @medi by alef-ar.medi;
+    sub alef-ar.fina' @fina by alef-ar.medi;
+    sub alef-ar' @medi by alef-ar.init;
+    sub alef-ar' @fina by alef-ar.init;
+  } RCLT_PHLV_JOINING_ALEF_2;
+
+  # 3. preferred joining for peh and theh
+
+  lookup RCLT_PHLV_LOW_PEH_THEH {
+    lookupflag IgnoreMarks RightToLeft;
+
+    sub [theh-ar.medi theh-ar.init theh-ar.medi.LL theh-ar.medi.LL.LR theh-ar.init.LL] [peh-ar.medi peh-ar.fina]' by peh-ar.fina.LR;
+
+  } RCLT_PHLV_LOW_PEH_THEH;
+
+	# 4. get the low-joining behaviour working
+	# if low connection is NOT possible,
+  # change the alef (init, fina, medi), meem (init), lam (init), ain (init), and teh (fina) to their baseline forms
+
+	lookup RCLT_PHLV_LOW_CONNECTION_BOTH {
+    lookupflag IgnoreMarks RightToLeft;
+
+		# change if low connection exists on both sides
+		sub [@low-connection_left @low-connection_both] @low-connection_both_from' [@low-connection_right @low-connection_both] by @low-connection_both_to;
+    # change if low connection can exist on either side and exists on the other side (and a lookahead)
+		sub [@low-connection_left_from @low-connection_both_from] @low-connection_both_from' [@low-connection_both_from @low-connection_both] [@low-connection_right @low-connection_both] by @low-connection_both_to;
+		sub [@low-connection_left_from @low-connection_both_from] @low-connection_both_from' [@low-connection_right @low-connection_both] by @low-connection_both_to;
+		sub [@low-connection_left @low-connection_both] @low-connection_both_from' [@low-connection_right_from @low-connection_both_from] by @low-connection_both_to;  
+	} RCLT_PHLV_LOW_CONNECTION_BOTH;
+
+	lookup RCLT_PHLV_LOW_CONNECTION_LEFT {
+    lookupflag IgnoreMarks RightToLeft;
+
+		sub @low-connection_left_from' [@low-connection_right @low-connection_both] by @low-connection_left_to;
+	} RCLT_PHLV_LOW_CONNECTION_LEFT;
+
+	lookup RCLT_PHLV_LOW_CONNECTION_RIGHT {
+    lookupflag IgnoreMarks RightToLeft;
+
+		ignore sub ain-ar.init [ain-ar.medi ain-ar.fina]';  # prefer this for of ain_ain
+
+		sub [@low-connection_left @low-connection_both] @low-connection_right_from' by @low-connection_right_to;
+	} RCLT_PHLV_LOW_CONNECTION_RIGHT;
+
+	lookup RCLT_PHLV_BASELINE_CONNECTION_RIGHT {
+    lookupflag IgnoreMarks RightToLeft;
+
+		sub alef-ar.init' @baseline-connection_right by alef-ar.init.BL;
+		sub lam-ar.init' @baseline-connection_right by lam-ar.init.BL;
+		sub ain-ar.init' @baseline-connection_right by ain-ar.init.BL;
+		sub meem-ar.init' @baseline-connection_right by meem-ar.init.BL;
+	} RCLT_PHLV_BASELINE_CONNECTION_RIGHT;
+
+	lookup RCLT_PHLV_BASELINE_CONNECTION_LEFT {
+    lookupflag IgnoreMarks RightToLeft;
+
+		sub @baseline-connection_left alef-ar.medi' by alef-ar.medi.BR;
+		sub @baseline-connection_left alef-ar.medi.LL' by alef-ar.medi.LL.BR;
+		sub @baseline-connection_left alef-ar.fina' by alef-ar.fina.BR;
+		sub @baseline-connection_left [teh-ar.medi teh-ar.fina]' by teh-ar.fina.BR;  # teh-ar.medi looks like teh-ar.fina
+	} RCLT_PHLV_BASELINE_CONNECTION_LEFT;
+
+  lookup RCLT_PHLV_BEH {
+    lookupflag IgnoreMarks RightToLeft;
+
+    @ANY = [space nbspace enspace emspace figurespace punctuationspace thinspace hairspace alef-ar alef-ar.fina alef-ar.medi alef-ar.init beh-ar beh-ar.fina beh-ar.medi beh-ar.init ain-ar ain-ar.fina ain-ar.medi ain-ar.init heh-ar reh-ar reh-ar.fina dad-ar dad-ar.fina dad-ar.medi dad-ar.init keheh-ar keheh-ar.fina keheh-ar.medi keheh-ar.init lam-ar lam-ar.fina lam-ar.medi lam-ar.init meem-ar meem-ar.fina meem-ar.medi meem-ar.init theh-ar theh-ar.fina theh-ar.medi theh-ar.init peh-ar peh-ar.fina peh-ar.medi peh-ar.init tcheh-ar tcheh-ar.fina tcheh-ar.medi tcheh-ar.init sad-ar sad-ar.fina sad-ar.medi sad-ar.init teh-ar teh-ar.fina teh-ar.medi teh-ar.init jeem-ar jeem-ar.fina jeem-ar.medi jeem-ar.init kaf-ar kaf-ar.fina kaf-ar.medi kaf-ar.init seen-ar seen-ar.fina seen-ar.medi seen-ar.init sheen-ar sheen-ar.fina sheen-ar.medi sheen-ar.init alef_meem-ar alef_meem-ar.fina alef_meem-ar.medi alef_meem-ar.init ain_meem-ar ain_meem-ar.fina ain_meem-ar.medi ain_meem-ar.init dad_meem-ar dad_meem-ar.init dad_peh-ar dad_peh-ar.fina lam_meem-ar lam_meem-ar.init meem_meem-ar meem_meem-ar.init meem_peh-ar meem_peh-ar.fina jeem_theh-ar jeem_theh-ar.fina jeem_theh-ar.medi jeem_theh-ar.init seen_peh-ar seen_peh-ar.fina alef-ar.fina.BR alef-ar.medi.BR alef-ar.medi.LL alef-ar.medi.LL.BR alef-ar.init.BL ain-ar.fina.LR ain-ar.init.BL dad-ar.medi.LL.LR dad-ar.init.LL keheh-ar.fina.LR lam-ar.medi.LL.LR lam-ar.init.BL meem-ar.init.BL meem-ar.medi.LL theh-ar.medi.LL theh-ar.medi.LL.LR theh-ar.init.LL peh-ar.fina.LR sad-ar.fina.LR sad-ar.medi.LL sad-ar.medi.LR sad-ar.medi.LL.LR sad-ar.init.LL teh-ar.fina.BR seen-ar.fina.LR seen-ar.medi.LR sheen-ar.fina.LR sheen-ar.medi.LL sheen-ar.medi.LR sheen-ar.init.LL alef_meem-ar.fina.LR alef_meem-ar.medi.LR ain_meem-ar.fina.LR ain_meem-ar.medi.LR jeem-ar.medi.LR jeem-ar.medi.LL.LR jeem-ar.init.LL seen_peh-ar.fina.LR sheen-ar.medi.LL.LR beh-ar.calt beh-ar.fina.calt theh-ar.ss02 theh-ar.fina.ss02 theh-ar.medi.ss02 theh-ar.init.ss02 theh-ar.medi.LL.ss02 theh-ar.medi.LL.LR.ss02 theh-ar.init.LL.ss02 seen-ar.ss03 seen-ar.fina.ss03 seen-ar.medi.ss03 seen-ar.init.ss03 seen-ar.fina.LR.ss03 seen-ar.medi.LR.ss03 seen_peh-ar.ss03 seen_peh-ar.fina.ss03 seen_peh-ar.fina.LR.ss03 lam-ar.ss04 lam-ar.fina.ss04 lam-ar.medi.ss04 lam-ar.init.ss04 lam_meem-ar.ss04 lam_meem-ar.init.ss04 lam-ar.ss05 lam-ar.fina.ss05 lam-ar.medi.ss05 lam-ar.init.ss05 lam_meem-ar.ss05 lam_meem-ar.init.ss05 lam-ar.ss06 lam-ar.fina.ss06 lam-ar.medi.ss06 lam-ar.init.ss06 lam-ar.medi.LL.LR.ss06 lam-ar.init.BL.ss06 lam_meem-ar.ss06 lam_meem-ar.init.ss06 space.ss07 period.ss07 period.ss08 ornament huzwaresh-x1-phlv huzwaresh-x2-phlv huzwaresh-x2-phlv.fina huzwaresh-x3-phlv huzwaresh-y-phlv huzwaresh-x1-phlv.ss09 ahreman-phlv ahremanig-phlv ahremaniz-phlv];
+    @beh_fina_medi = [beh-ar.fina beh-ar.medi beh-ar.fina.calt];
+    @beh_base_init = [beh-ar beh-ar.init beh-ar.calt];
+    @beh = [@beh_fina_medi @beh_base_init];
+
+    sub @beh_base_init' @ANY @ANY @beh by beh-ar.calt;
+    sub @beh_fina_medi' @ANY @ANY @beh by beh-ar.fina.calt;
+    sub @beh_base_init' @ANY @beh by beh-ar.calt;
+    sub @beh_fina_medi' @ANY @beh by beh-ar.fina.calt;
+    sub @beh_base_init' @beh by beh-ar.calt;
+    sub @beh_fina_medi' @beh by beh-ar.fina.calt;
+  } RCLT_PHLV_BEH;
+} rclt;

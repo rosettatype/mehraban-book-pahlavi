@@ -1,0 +1,42 @@
+feature rlig {
+
+	lookup RLIG_PHLV {
+		lookupflag IgnoreMarks RightToLeft;
+
+		@peh-fina-medi = [peh-ar.fina peh-ar.medi];  # fake medi form looks like fina
+
+		sub alef-ar.init meem-ar.fina by alef_meem-ar;
+		sub alef-ar.medi meem-ar.fina by alef_meem-ar.fina;
+		sub alef-ar.medi meem-ar.medi by alef_meem-ar.medi;
+		sub alef-ar.init meem-ar.medi by alef_meem-ar.init;
+
+		sub jeem-ar.init theh-ar.fina by jeem_theh-ar;
+		sub jeem-ar.medi theh-ar.fina by jeem_theh-ar.fina;
+		sub jeem-ar.medi theh-ar.medi by jeem_theh-ar.medi;
+		sub jeem-ar.init theh-ar.medi by jeem_theh-ar.init;
+
+		sub seen-ar.init @peh-fina-medi by seen_peh-ar;
+		sub seen-ar.medi @peh-fina-medi by seen_peh-ar.fina;
+
+		sub dad-ar.init @peh-fina-medi by dad_peh-ar;
+		sub dad-ar.medi @peh-fina-medi by dad_peh-ar.fina;
+
+		sub dad-ar.init meem-ar.fina by dad_meem-ar;
+		sub dad-ar.init meem-ar.medi by dad_meem-ar.init;
+
+		sub ain-ar.init meem-ar.fina by ain_meem-ar;
+		sub ain-ar.medi meem-ar.fina by ain_meem-ar.fina;
+		sub ain-ar.medi meem-ar.medi by ain_meem-ar.medi;
+		sub ain-ar.init meem-ar.medi by ain_meem-ar.init;
+
+		sub lam-ar.init meem-ar.fina by lam_meem-ar;
+		sub lam-ar.init meem-ar.medi by lam_meem-ar.init;
+
+		sub meem-ar.init @peh-fina-medi by meem_peh-ar;
+		sub meem-ar.medi @peh-fina-medi by meem_peh-ar.fina;
+
+		sub meem-ar.init meem-ar.fina by meem_meem-ar;
+		sub meem-ar.init meem-ar.medi by meem_meem-ar.init;
+	} RLIG_PHLV;
+
+} rlig;
