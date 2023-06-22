@@ -9,9 +9,9 @@ table OS/2 {
 	CodePageRange
 						;
 	winAscent			1035; # Absolute tallest glyphs
-	winDescent			650; # Absolute lowest glyphs
+	winDescent			660; # Absolute lowest glyphs
 	TypoAscender		818; # Most essential asender parts included
-	TypoDescender		-650; # Absolute lowest glyphs
+	TypoDescender		-660; # Absolute lowest glyphs
 	TypoLineGap			200; # 15% of typo asc+desc
 	XHeight		        416;
 	CapHeight			660;
@@ -23,7 +23,7 @@ table OS/2 {
 
 table hhea {
 	Ascender 818; # Most essential asender parts included
-	Descender -650; # Absolute lowest glyphs
+	Descender -660; # Absolute lowest glyphs
 	LineGap 200; # 15% of typo asc+desc
 } hhea;
 

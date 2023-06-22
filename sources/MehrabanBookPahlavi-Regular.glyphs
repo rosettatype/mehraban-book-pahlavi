@@ -1,5 +1,8 @@
 {
 .appVersion = "3201";
+DisplayStrings = (
+"/beh-ar.fina.calt/lam-ar.medi"
+);
 copyright = "Copyright 2023 Amir Mahdi Moslehi. All rights reserved. Published by Rosetta Type Foundry.";
 customParameters = (
 {
@@ -406,7 +409,7 @@ name = underlineThickness;
 value = 40;
 }
 );
-descender = -650;
+descender = -660;
 guideLines = (
 {
 position = "{42, 474}";
@@ -424,6 +427,9 @@ position = "{235, -189}";
 {
 angle = 270;
 position = "{391, 51}";
+},
+{
+position = "{-363, -656}";
 }
 );
 horizontalStems = (
