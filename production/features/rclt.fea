@@ -225,7 +225,6 @@
   kaf-ar
   seen-ar
   sheen-ar
-  heh-ar
 
   alef_meem-ar
   ain_meem-ar
@@ -256,7 +255,6 @@
   kaf-ar.fina
   seen-ar.fina
   sheen-ar.fina
-  heh-ar
 
   alef_meem-ar.fina
   ain_meem-ar.fina
@@ -330,8 +328,8 @@ feature rclt {
   lookup RCLT_PHLV_JOINING {
     lookupflag IgnoreMarks RightToLeft;
 
-    sub [@fake_init @base] @fina' by @base;
-    sub [@fake_init @base] @medi' by @init;
+    sub [@fake_init @base heh-ar] @fina' by @base;
+    sub [@fake_init @base heh-ar] @medi' by @init;
     sub @fake_medi @fina' by @base;
     sub @fake_medi @medi' by @init;
   } RCLT_PHLV_JOINING;
@@ -378,11 +376,17 @@ feature rclt {
     lookupflag IgnoreMarks RightToLeft;
 
 		# change if low connection exists on both sides
-		sub [@low-connection_left @low-connection_both] @low-connection_both_from' [@low-connection_right @low-connection_both] by @low-connection_both_to;
+		sub @low-connection_left @low-connection_both @low-connection_both_from' @low-connection_both @low-connection_right by @low-connection_both_to;
+		sub @low-connection_left @low-connection_both_from' @low-connection_both @low-connection_right by @low-connection_both_to;
+		sub @low-connection_left @low-connection_both @low-connection_both_from' @low-connection_right by @low-connection_both_to;
+		sub @low-connection_left @low-connection_both_from' @low-connection_right by @low-connection_both_to;
     # change if low connection can exist on either side and exists on the other side (and a lookahead)
-		sub [@low-connection_left_from @low-connection_both_from] @low-connection_both_from' [@low-connection_both_from @low-connection_both] [@low-connection_right @low-connection_both] by @low-connection_both_to;
-		sub [@low-connection_left_from @low-connection_both_from] @low-connection_both_from' [@low-connection_right @low-connection_both] by @low-connection_both_to;
-		sub [@low-connection_left @low-connection_both] @low-connection_both_from' [@low-connection_right_from @low-connection_both_from] by @low-connection_both_to;  
+		sub @low-connection_left_from [@low-connection_both_from @low-connection_both] @low-connection_both_from' [@low-connection_both_from @low-connection_both] @low-connection_right by @low-connection_both_to;
+		sub @low-connection_left_from @low-connection_both_from' [@low-connection_both_from @low-connection_both] @low-connection_right by @low-connection_both_to;
+		sub @low-connection_left_from [@low-connection_both_from @low-connection_both] @low-connection_both_from' @low-connection_right by @low-connection_both_to;
+		sub @low-connection_left_from @low-connection_both_from' @low-connection_right_from by @low-connection_both_to;
+    sub @low-connection_left_from @low-connection_both_from' @low-connection_right by @low-connection_both_to;
+    sub @low-connection_left @low-connection_both_from' @low-connection_right_from by @low-connection_both_to;
 	} RCLT_PHLV_LOW_CONNECTION_BOTH;
 
 	lookup RCLT_PHLV_LOW_CONNECTION_LEFT {
