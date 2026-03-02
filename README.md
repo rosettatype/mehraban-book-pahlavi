@@ -12,6 +12,6 @@ The Book Pahlavi script’s Unicode encoding is still awaiting final publication
 
 Mehraban Book Pahlavi is an outcome of the Missing Scripts research programme at the ANRT (ENSAD Nancy, France) in collaboration with the Scripts Encoding Initiative (Berkeley, USA) and Hochschule Mainz (Germany). The publication was jointly funded by the Erasmus programme and Rosetta.
 
-The complete [Mehraban collection](https://rosettatype.com/fonts/#?collection=Mehraban) (available from Rosetta) currently supports Arabic, Avestan, and Book Pahlavi as individual families.
-
 This project is far from complete and should be considered a beta (if not alpha). We will appreciate any feedback. Please use [Issues on GitHub](https://github.com/rosettatype/mehraban-book-pahlavi/issues).
+
+There is also [Mehraban Avestan](https://github.com/rosettatype/mehraban-avestan).
